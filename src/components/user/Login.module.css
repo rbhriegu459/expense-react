@@ -1,0 +1,80 @@
+.mainDiv {
+    background-image: url("../../assests/bg.png");
+    background-size: cover;
+    height: 747px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .div{
+      background-color: white;
+      padding: 30px 60px;
+      border-radius: 16px;
+  }
+  
+  .heading {
+    font-size: 35px;
+    background: url("https://media.giphy.com/media/FMsbSSjEe0N6zH7K7x/giphy.gif?cid=790b7611g6dxt07m4fbg6yuow9beg22b74j9v17hxe62w7ou&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin:0 0 15px 0;
+  }
+  
+  .heading:focus {
+    outline: none;
+  }
+  
+  .inputWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .input {
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    line-height: 6ex;
+  }
+  
+  .label2 {
+    position: absolute;
+    top: 0rem;
+    z-index: 1;
+    left: 1.5em;
+    background-color: white;
+    padding: 0 5px;
+  }
+  
+  .label3 {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+    left: 1.5em;
+    background-color: white;
+    padding: 0 5px;
+  }
+  
+  .btn {
+    background: url("https://media.giphy.com/media/FMsbSSjEe0N6zH7K7x/giphy.gif?cid=790b7611g6dxt07m4fbg6yuow9beg22b74j9v17hxe62w7ou&ep=v1_gifs_search&rid=giphy.gif&ct=g");
+    margin: 5%;
+    width: 40%;
+    padding: 6px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .btn:hover{
+      cursor: pointer;
+      font-size: 18px;
+  }
