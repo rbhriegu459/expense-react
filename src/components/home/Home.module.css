@@ -1,0 +1,67 @@
+.mainDiv {
+    background-image: url("../../assests/bg.png");
+    background-size: cover;
+    height: 747px;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formDiv{
+      background-color: white;
+
+  }
+
+  .detailsForm{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding: 1.5rem;
+    width: 40%;
+  }
+
+.input {
+    background-color: transparent;
+    border: 1px solid gray;
+    border-radius: 6px;
+    position: relative;
+    width: 200px;
+    margin: 10px;
+    line-height: 6ex;
+  }
+  
+  .label{
+    position: absolute;
+    top: 1.4rem;
+    left: 2.6rem;
+    z-index: 1;
+    background-color: white;
+    padding: 0 5px;
+  }
+
+  .label2{
+    position: absolute;
+    top: 1.4rem;
+    left: 14.4rem;
+    width: 50%;
+    z-index: 1;
+    background-color: white;
+    padding: 0 5px;
+  }
+
+  .cancel{
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    border:0;
+  }
+
+  .cancel:hover{
+    cursor: pointer;
+    font-weight: 800;
+  }
