@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./Signup.module.css";
+import {  useNavigate } from "react-router-dom";
 
 function Signup() {
 
@@ -7,8 +8,9 @@ function Signup() {
     {
       Name: '', Email:'', Password:'', ConfirmPassword:''
     }
-  )
+  );
 
+  const navigate = useNavigate();
   let name, value;
 
   const data = (e) => {
@@ -35,8 +37,8 @@ function Signup() {
 }
     const res = await fetch('https://expensetracker-cfa62-default-rtdb.firebaseio.com/UserData.json', options)
     if(res){
-      console.log(res);
       alert("User added");
+      navigate('/login');
     } else{
       alert("Error");
     }
@@ -62,7 +64,7 @@ function Signup() {
           <button className={classes.btn} onClick={getData}>Signup</button>
 
           <span>
-            Already a user?<a>Login</a>
+            Already a user?<a href="login">Login</a>
           </span>
         </form>
       </div>

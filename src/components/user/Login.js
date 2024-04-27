@@ -1,5 +1,6 @@
 import { useState } from "react";
 import classes from "./Login.module.css";
+import { useNavigate } from "react-router-dom";
 
 const fetchData = async (email, password) => {
   const res = await fetch(
@@ -21,20 +22,14 @@ function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate();
 
   const checkLogin =async (e) => {
     e.preventDefault();
-    const dbData = fetchData();
-
-    // dbData.map((i) => {
-    //   if (i.Email === email && i.Password === password) {
-    //     alert("Logged In");
-    //   }
-    // });
-    // alert("Invalid")
     await fetchData(email, password);
     setEmail('');
     setPassword('');
+    navigate('/');
   };
 
   return (
@@ -69,7 +64,7 @@ function Login() {
           </button>
 
           <span>
-            New user? <a href="Signup">Signup</a>
+            New user? <a href="signup">Signup</a>
           </span>
         </form>
       </div>
